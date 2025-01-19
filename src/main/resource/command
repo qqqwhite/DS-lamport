@@ -1,0 +1,8 @@
+javac -cp "D:\外包\0823\dis\src\main\java;C:\Users\17318\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;C:\Users\17318\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar" -d D:\外包\0823\dis\src\main\target D:\外包\0823\dis\src\main\java\*.java
+
+java -cp "D:\外包\0823\dis\target\classes;C:\Users\17318\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;;C:\Users\17318\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar" AggregationServer 4567
+
+java -cp "D:\外包\0823\dis\target\classes;C:\Users\17318\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;;C:\Users\17318\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar" ContentServer 8090 c1 D:\外包\0823\dis\src\main\resource\0 127.0.0.1 4567
+java -cp "D:\外包\0823\dis\target\classes;C:\Users\17318\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;;C:\Users\17318\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar" ContentServer 8091 c2 D:\外包\0823\dis\src\main\resource\1 127.0.0.1 4567
+
+java -cp "D:\外包\0823\dis\target\classes;C:\Users\17318\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;;C:\Users\17318\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar" GETClient 8000 g1 127.0.0.1 4567
